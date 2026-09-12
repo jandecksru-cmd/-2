@@ -36,14 +36,14 @@ header{display:flex;justify-content:space-between;align-items:center}.logo{font-
 </div><div class="toast" id="toast"></div>
 <script>
 const bs=[
-['Tung Tung Sahur','assets/tung_tung.png',0,1],
-['Brr Brr Patapim','assets/patapim.png',100,4],
-['Tralalero Tralala','assets/tralalero.png',700,18],
-['Bombardiro Crocodilo','assets/bombardiro.png',5000,80],
-['Chimpanzini Bananini','assets/chimpanzini.png',40000,350],
-['Cappuccino Assassino','assets/cappuccino.png',350000,1800],
-['Lirili Larila','assets/lirili.png',4000000,10000],
-['Boneca Ambalabu','assets/boneca.png',50000000,65000]
+['Tung Tung Sahur','assets/tung_tung.PNG',0,1],
+['Brr Brr Patapim','assets/patapim.PNG',100,4],
+['Tralalero Tralala','assets/tralalero.PNG',700,18],
+['Bombardiro Crocodilo','assets/bombardiro.PNG',5000,80],
+['Chimpanzini Bananini','assets/chimpanzini.PNG',40000,350],
+['Cappuccino Assassino','assets/cappuccino .PNG',350000,1800],
+['Lirili Larila','assets/lirili.PNG LEO',4000000,10000],
+['Boneca Ambalabu','assets/boneca.PNG',50000000,65000]
 ];
 const ups=[
 ['tap','💪 Сильный тап','+1 к тапу',25],
@@ -69,7 +69,7 @@ shards.textContent=s.shards;mult.textContent=(1+s.shards*.1).toFixed(1);rebirthB
 }
 function tab(id,el){document.querySelectorAll('.panel').forEach(x=>x.classList.remove('on'));document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));document.getElementById(id).classList.add('on');el.classList.add('on')}
 function toast(t){let x=document.getElementById('toast');x.textContent=t;x.classList.add('show');clearTimeout(window.tt);window.tt=setTimeout(()=>x.classList.remove('show'),1500)}
-const soundFiles=['tung_tung','patapim','tralalero','bombardiro','chimpanzini','cappuccino','lirili','boneca'];
+const soundFiles=['tung_tung','patapim','tralalero','bombardiro','chimpanzini','cappuccino ','lirili','boneca'];
 const sounds={};
 let soundOn=localStorage.brainrotSound!=='0';
 function getSound(name){if(!sounds[name]){sounds[name]=new Audio('assets/audio/'+name+'.wav');sounds[name].preload='auto'}return sounds[name]}
